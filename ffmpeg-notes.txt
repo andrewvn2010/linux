@@ -1,0 +1,2 @@
+# check dimension of videos in a subdirectory
+find . -name '*.mp4' | xargs -I{} ffmpeg -i {} 2>&1 | grep 'yuv420p'
